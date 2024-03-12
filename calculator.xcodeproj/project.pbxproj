@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		340D11422B9A21E10069CA11 /* calculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D11412B9A21E10069CA11 /* calculatorApp.swift */; };
-		340D11442B9A21E10069CA11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D11432B9A21E10069CA11 /* ContentView.swift */; };
-		340D11462B9A21E80069CA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340D11452B9A21E80069CA11 /* Assets.xcassets */; };
-		340D11492B9A21E80069CA11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340D11482B9A21E80069CA11 /* Preview Assets.xcassets */; };
-		340D11532B9A21E90069CA11 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D11522B9A21E90069CA11 /* calculatorTests.swift */; };
-		340D115D2B9A21E90069CA11 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D115C2B9A21E90069CA11 /* calculatorUITests.swift */; };
-		340D115F2B9A21E90069CA11 /* calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D115E2B9A21E90069CA11 /* calculatorUITestsLaunchTests.swift */; };
+		340D11442B9A21E10069CA11 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D11432B9A21E10069CA11 /* CalculatorView.swift */; };
+
+		340D116F2B9A4DC10069CA11 /* CalculatorButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D116E2B9A4DC10069CA11 /* CalculatorButtons.swift */; };
+		340D11742B9A58210069CA11 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D11732B9A58210069CA11 /* CalculatorViewModel.swift */; };
+		342721452B9BC491001CDE99 /* CalculatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342721442B9BC491001CDE99 /* CalculatorFramework.framework */; };
+		342721462B9BC491001CDE99 /* CalculatorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342721442B9BC491001CDE99 /* CalculatorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +33,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		342721472B9BC491001CDE99 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				342721462B9BC491001CDE99 /* CalculatorFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		340D113E2B9A21E10069CA11 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		340D11412B9A21E10069CA11 /* calculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorApp.swift; sourceTree = "<group>"; };
-		340D11432B9A21E10069CA11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		340D11432B9A21E10069CA11 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		340D11452B9A21E80069CA11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		340D11482B9A21E80069CA11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		340D114E2B9A21E90069CA11 /* calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +58,9 @@
 		340D11582B9A21E90069CA11 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		340D115C2B9A21E90069CA11 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		340D115E2B9A21E90069CA11 /* calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		340D116E2B9A4DC10069CA11 /* CalculatorButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtons.swift; sourceTree = "<group>"; };
+		340D11732B9A58210069CA11 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		342721442B9BC491001CDE99 /* CalculatorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalculatorFramework.framework; path = "../CalculatorFramework/build/Debug-iphonesimulator/Debug-iphonesimulator/CalculatorFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				342721452B9BC491001CDE99 /* CalculatorFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,7 @@
 				340D11512B9A21E90069CA11 /* calculatorTests */,
 				340D115B2B9A21E90069CA11 /* calculatorUITests */,
 				340D113F2B9A21E10069CA11 /* Products */,
+				340D11A02B9B7F0F0069CA11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +114,9 @@
 		340D11402B9A21E10069CA11 /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				340D11722B9A57F80069CA11 /* Calculator */,
 				340D11412B9A21E10069CA11 /* calculatorApp.swift */,
-				340D11432B9A21E10069CA11 /* ContentView.swift */,
+				340D116D2B9A4D9A0069CA11 /* Common */,
 				340D11452B9A21E80069CA11 /* Assets.xcassets */,
 				340D11472B9A21E80069CA11 /* Preview Content */,
 			);
@@ -127,6 +148,47 @@
 			path = calculatorUITests;
 			sourceTree = "<group>";
 		};
+		340D116C2B9A27780069CA11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				340D11432B9A21E10069CA11 /* CalculatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		340D116D2B9A4D9A0069CA11 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				340D116E2B9A4DC10069CA11 /* CalculatorButtons.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		340D11702B9A57DF0069CA11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				340D11732B9A58210069CA11 /* CalculatorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		340D11722B9A57F80069CA11 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				340D11702B9A57DF0069CA11 /* ViewModel */,
+				340D116C2B9A27780069CA11 /* Views */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		340D11A02B9B7F0F0069CA11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				342721442B9BC491001CDE99 /* CalculatorFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +199,7 @@
 				340D113A2B9A21E10069CA11 /* Sources */,
 				340D113B2B9A21E10069CA11 /* Frameworks */,
 				340D113C2B9A21E10069CA11 /* Resources */,
+				342721472B9BC491001CDE99 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,7 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340D11442B9A21E10069CA11 /* ContentView.swift in Sources */,
+				340D11442B9A21E10069CA11 /* CalculatorView.swift in Sources */,
+				340D116F2B9A4DC10069CA11 /* CalculatorButtons.swift in Sources */,
+				340D11742B9A58210069CA11 /* CalculatorViewModel.swift in Sources */,
 				340D11422B9A21E10069CA11 /* calculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,12 +488,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"calculator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CalculatorFrameworks",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,12 +519,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"calculator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CalculatorFrameworks",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
